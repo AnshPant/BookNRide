@@ -1,5 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .container {
   padding: 0 2rem;
+  display: flex;
+  height: 100px;
+  flex-direction: row-;
+ 
+}
+
+.map{
+  background-color: red ;
+}
+
+.start{
+  background-color: green;
 }
 
 .main {
