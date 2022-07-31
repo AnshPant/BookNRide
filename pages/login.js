@@ -3,7 +3,7 @@ import tw from "tailwind-styled-components"
 import {useRouter} from 'next/router'
 import { signInWithPopup , onAuthStateChanged } from 'firebase/auth'
 import {auth,provider} from '../firebase'
-const login=()=>{
+const Login=()=>{
     const router = useRouter()
 
     useEffect(()=>{
@@ -25,7 +25,7 @@ const login=()=>{
         
     )
 }
-export default login
+export default Login
 
 const Wrapper=tw.div`flex flex-col h-screen bg-gray-200 w-screen p-4`
 const  LOGIN = tw.div`text-5xl pt-4 text-gray-400 `
