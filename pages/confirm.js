@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Map from './components/Map'
 import {useRouter } from 'next/router'
 import RideSelector from './components/RideSelector'
-const confirm =()=>{
+const Confirm =()=>{
     const [p,sp]=useState([0,0])
     const [d,sd]=useState([0,0])
     //picking pickup value and dropoff value from url of confirm page
@@ -74,7 +74,7 @@ const confirm =()=>{
     )
 }
 
-export default confirm
+export default Confirm
 
 const Wrapper=tw.div`
 flex h-screen flex-col
