@@ -2,7 +2,7 @@ import React from 'react'
 import tw from "tailwind-styled-components"
 import Link from 'next/link'
 import {useEffect,useState}from 'react'
-const search=()=>{
+const Search=()=>{
 
     const [pick,setpick] = useState("")
     const [dropp,setdropp] = useState("")
@@ -69,7 +69,7 @@ const search=()=>{
         </div>
     )
 }
-export default search
+export default Search
 
 const Confirm = tw.div`
 bg-black text-white text-center mt-2 mx-4 text-2xl cursor-pointer p-2 
