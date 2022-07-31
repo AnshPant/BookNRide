@@ -1,6 +1,9 @@
 {
   "name": "booknride",
   "version": "0.1.0",
+  "engines": {
+    "node": "16.15.1"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
