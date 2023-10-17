@@ -32,8 +32,8 @@ const RideSelector = (props) => {
 
     useEffect(()=>{
         // console.log(pickupcoordinates[0]+"jj")
-       //fetch(`https://api.mapbox.com/directions/v5/mapbox/driving/${pickupcoordinates[0]},${pickupcoordinates[1]};${dropoffcoordinates[0]},${dropoffcoordinates[1]}?access_token=pk.eyJ1IjoidHJpYWx0cmlhbDEyIiwiYSI6ImNsNTczODNybTE1bzAzZG1mcTd5Z2cwbHYifQ.u42_YrelEvVx-CZkPWHGjg`)
-       rideDuration= fetch(`https://api.mapbox.com/directions/v5/mapbox/driving/${props.p[0]},${props.p[1]};${props.d[0]},${props.d[1]}?approaches=unrestricted;curb&access_token=pk.eyJ1IjoidHJpYWx0cmlhbDEyIiwiYSI6ImNsNTczODNybTE1bzAzZG1mcTd5Z2cwbHYifQ.u42_YrelEvVx-CZkPWHGjg`)
+       //fetch(`https://api.mapbox.com/directions/v5/mapbox/driving/${pickupcoordinates[0]},${pickupcoordinates[1]};${dropoffcoordinates[0]},${dropoffcoordinates[1]}?access_token=pk.eyJ1IjoiYW5zaGhoMTIiLCJhIjoiY2xudWJ1bG1uMGFkaDJscGtxc3MwcGN6OSJ9.p9ZD-63ZHn4oWkZmuHaVWw`)
+       rideDuration= fetch(`https://api.mapbox.com/directions/v5/mapbox/driving/${props.p[0]},${props.p[1]};${props.d[0]},${props.d[1]}?approaches=unrestricted;curb&access_token=pk.eyJ1IjoiYW5zaGhoMTIiLCJhIjoiY2xudWJ1bG1uMGFkaDJscGtxc3MwcGN6OSJ9.p9ZD-63ZHn4oWkZmuHaVWw`)
         .then(res => res.json())
         .then(data=>{
             console.log(data)
